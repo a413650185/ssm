@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.acheng1314.dao.UserDao">
+    
+
+    <insert id="add" parameterType="User">
+        insert INTO user(pass_word,sex,username) VALUES (#{password},#{sex},#{username});
+    </insert>
+</mapper>
